@@ -1,0 +1,3 @@
+PHP script started
+SQL Query: SELECT * FROM products WHERE type = 'cpu' AND price <= 10000
+Products: [{"id":1,"name":"CPU - Budget","type":"cpu","price":3000,"description":"A budget-friendly CPU for basic tasks."}, ...]

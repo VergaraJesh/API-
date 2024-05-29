@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="PC Builder Logo">
+        </div>
+        <div class="contact-support">
+            <a href="contact.html" class="contact-button">Contact Support</a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>PC Builder</h1>
+        <div>
+            <label for="budget-input">Enter Budget: </label>
+            <input type="number" id="budget-input">
+            <button id="budget-button">Get Recommendations</button>
+        </div>
+        <div>
+            <label for="component-select">Select Component Type: </label>
+            <select id="component-select">
+                <option value="cpu">CPU</option>
+                <option value="gpu">GPU</option>
+                <option value="ram">RAM</option>
+                <option value="storage">Storage</option>
+                <option value="cooler">Cooler</option>
+                <option value="motherboard">Motherboard</option>
+                <option value="psu">Power Supply</option>
+                <option value="case">Case</option>
+                <option value="monitor">Monitor</option>
+                <option value="keyboard">Keyboard</option>
+                <option value="mouse">Mouse</option>
+            </select>
+        </div>
+        
+        <div id="component-price"></div>
+
+        <h2>Recommended Products</h2>
+        <ul id="recommendations"></ul>
+
+        <hr> <!-- Divider between recommendations and selected products -->
+
+        <h2>Selected Products</h2>
+        <ul id="selected"></ul>
+        <div id="total-price">Total Price: ₱0.00</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 PC Builder. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
